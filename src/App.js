@@ -1,20 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
+
+const App = () => {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div>
+            <h1>Todo App</h1>
+            <SearchPanel/>
+            <TodosList/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    )
 }
+
+const el = <h2>React element</h2>
+
+const SearchPanel = () => {
+    return (
+        <input type="text" placeholder="Search anything"></input>
+    )
+}
+
+const TodosList = () => {
+    return (
+        <ul>
+            <li>Learn React</li>
+            <li>Take a job</li>
+            {el}
+        </ul>
+    )
+}
+
+
 export default App;
