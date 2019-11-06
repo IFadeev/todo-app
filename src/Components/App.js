@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const App = () => {
     return (
         <div>
@@ -10,8 +9,6 @@ const App = () => {
         </div>
     )
 }
-
-const el = <h2>React element</h2>
 
 const SearchPanel = () => {
     return (
