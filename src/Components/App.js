@@ -1,4 +1,6 @@
 import React from 'react';
+import SearchPanel from './search-panel';
+import TodosList from './todo-list';
 
 const App = () => {
     return (
@@ -9,22 +11,5 @@ const App = () => {
         </div>
     )
 }
-
-const SearchPanel = () => {
-    return (
-        <input type="text" placeholder="Search anything"></input>
-    )
-}
-
-const TodosList = () => {
-    return (
-        <ul>
-            <li>Learn React</li>
-            <li>Take a job</li>
-            {el}
-        </ul>
-    )
-}
-
 
 export default App;
